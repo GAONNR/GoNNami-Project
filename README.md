@@ -3,4 +3,13 @@
 
 ## Packages
 * Vue.js (frontend)
-* Express.js (backend, maybe?)
+* Express.js (backend, not implemented)
+
+## Usage
+* Vue.js (frontend)
+
+  ```bash
+  cd vue
+  npm install
+  npm run dev
+  ```

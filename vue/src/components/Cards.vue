@@ -26,13 +26,12 @@ data.forEach((e, i) => {
     desc: e.desc
   };
 });
-/*
-$(document).ready(function() {
+
+document.addEventListener('DOMContentLoaded', function() {
   $('input.autocomplete').autocomplete({
     data: cardNames
   });
 });
-*/
 
 export default {
   name: 'Cards',

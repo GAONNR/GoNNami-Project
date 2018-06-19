@@ -1,41 +1,35 @@
 <template>
-  <div id="app">
-    <nav class="z-depth-0">
-      <div class="nav-wrapper cyan">
-        <a href="/" class="brand-logo center">GoNNami</a>
-      </div>
-    </nav>
+<div id="app">
+  <nav class="navbar is-primary">
+    <!-- navbar brand, navbar menu... -->
+    <div class="navbar-brand">
+      <!-- navbar items, navbar burger... -->
+      <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+      </a>
 
-    <div class="container">
-      <router-view/>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
     </div>
+  </nav>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2014 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-        </div>
-      </div>
-    </footer>
+  <div class="container">
+    <router-view/>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Developed by G40N
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
 </template>
 
 <script>
